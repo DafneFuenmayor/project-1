@@ -1,0 +1,374 @@
+* {
+  font-family: Georgia, serif;
+  margin: 0%;
+  border: 0%;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  color: #000000;
+  background-color: #efd8ff;
+  font-family: "Times New Roman", Times, serif;
+
+  font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
+div header {
+  display: flex;
+  background-color: rgba(134, 60, 88, 0.418);
+  height: 90px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div header nav ul {
+  display: flex;
+  gap: 1.1em;
+}
+div header a img {
+  width: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.imagen1,
+.imagen2,
+.imagen3 {
+  width: 500px;
+  height: 700px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.im {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.seccion- h2 {
+  display: flex;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+h4,
+p {
+  color: #000000;
+  text-align: center;
+  margin: 0px;
+}
+
+.seccion-3 h2 {
+  color: #000000;
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-4 {
+  background-color: black;
+}
+.seccion-4 h2 {
+  color: #ffffff;
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-2 {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.seccion-2 .tarjeta {
+  width: calc(33.33% - 40px);
+  max-width: 330px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.seccion-2 .tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+.seccion-2 .tarjeta h4 {
+  font-weight: 600;
+}
+
+.seccion-2 .tarjeta p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .seccion-2 .tarjeta {
+    width: calc(50% - 40px);
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seccion-2 .tarjeta {
+    width: calc(100% - 40px);
+    margin: 20px;
+  }
+}
+
+.seccion-1 {
+  background-color: #d37f9457;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 4em; /*  */
+}
+.seccion-1 img {
+  width: 20vw; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+  height: 30vh; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+}
+
+.seccion-1 {
+  background-color: #d37f9457;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4em;
+  flex-wrap: wrap;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos al inicio y al final de la fila */
+  background-color: #d37f94;
+  padding: 1em;
+
+}
+
+/* Estilos específicos para dispositivos móviles y tablets */
+@media screen and (max-width: 768px) {
+  .seccion-1 img {
+    width: 100%; /* Ajusta el ancho de la imagen para ocupar todo el ancho */
+  }
+
+  .seccion-1 p {
+    width: 100%; /* Ajusta el ancho del párrafo para ocupar todo el ancho */
+  }
+}
+
+#check {
+  display: none;
+}
+.checkbtn {
+  display: none;
+  font-size: 30px;
+  float: right;
+
+  cursor: pointer;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .content-card {
+    display: block;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 100%;
+    left: 20px;
+  }
+
+  img {
+    max-width: 60%;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #af4c995d;
+    text-align: center;
+    top: 90px;
+    left: -100%;
+    transition: all 0.5s;
+  }
+
+  div header nav ul {
+    display: block;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+header {
+  background-color: #fff;
+}
+
+.acerca-de {
+  text-align: center;
+}
+
+.acerca-imagen {
+  margin-bottom: 40px;
+}
+
+h2.fuente-acento {
+  text-align: center;
+}
+
+footer {
+  background-color: #ff85be77;
+  width: 100%;
+  height: 20vh;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook,
+.intagram,
+.whatsapp {
+  padding: 30px;
+}
+
+/* seccion 3 "servicios" */
+.seccion-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #d37f9457;
+}
+
+.formulario {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(142, 13, 61, 0.49);
+  color: rgb(22, 20, 20);
+  border-radius: 40px;
+  padding: 30px 10px;
+}
+
+.formulario h1 {
+  font-size: 3rem; /* Cambiado a tamaño de fuente relativo */
+  color: white;
+  font-family: Arial;
+  font-style: oblique;
+  text-align: center;
+}
+
+.input-box {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: white;
+  border: 2px solid rgba(255, 255, 255, 0.625);
+  border-radius: 20px; /* Reducido para que no se vea cortado en dispositivos móviles */
+  color: #b1aeae;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.input-box input::placeholder {
+  color: #b1aeae;
+  font-weight: 600;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.formulario .btn {
+  width: 100%;
+  height: 45px;
+  background: rgb(195, 195, 195);
+  border: none;
+  border: 2px solid rgba(233, 144, 255, 0);
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 1rem; /* Tamaño de fuente relativo */
+  color: #000000;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* Media Query para ajustar estilos en dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+  .formulario {
+    padding: 20px; /* Ajustar el relleno para dispositivos móviles */
+  }
+}
